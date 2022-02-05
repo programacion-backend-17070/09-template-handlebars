@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hola, bienvenidos</h1>
+      <div id="app"></div>
+    </div>
+  </body>
+  <script type="text/x-handlerbars-template" id="template">
+    <div>Mi nombre es {{{ nombre }}}</div>
+    <p>Estas son mis peliculas favoritas:</p>
+    {{#each movies}}
+      <li>{{this.name}}</li>
+    {{/each}}
+    
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  
+  <script src="/static/js/handlebars.js"></script>
+</html>
