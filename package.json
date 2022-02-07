@@ -18,8 +18,6 @@
   },
   "homepage": "https://github.com/programacion-backend-17070/09-template-handlebars#readme",
   "dependencies": {
-    "express": "^4.17.2",
-    "express-handlebars": "^6.0.2",
-    "nodemon": "^2.0.15"
+    "express": "^4.17.2"
   }
 }
