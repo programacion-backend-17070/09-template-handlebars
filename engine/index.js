@@ -1,9 +1,9 @@
 const fs = require('fs').promises;
 
-module.exports = async function (filePath, options, callback) {
+module.exports = async function (filePath, context, callback) {
   const content = await fs.readFile(filePath)
   const rendered = content.toString()
-    .replace('#title#', '' + options.title + '')
-    .replace('#message#', '' + options.message + '');
+    .replace('#title#', '' + context.title + '')
+    .replace('#message#', '' + context.message + '');
   return callback(null, rendered);
 }
